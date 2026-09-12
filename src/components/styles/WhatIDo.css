@@ -1,0 +1,544 @@
+.whatIDO {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  place-items: center;
+  position: relative;
+  opacity: 1;
+  min-height: 100vh;
+  height: auto;
+  width: var(--cWidth);
+  max-width: 1920px;
+  margin: auto;
+  z-index: 9;
+  padding: 100px 0;
+}
+.what-box {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 9;
+}
+.what-header-group {
+  max-width: 520px;
+  margin-right: 8%;
+}
+.what-subhead {
+  color: var(--accentColor);
+  letter-spacing: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+.what-box h2 {
+  font-size: calc(3.5vw + 20px);
+  line-height: calc(3.5vw + 16px);
+  font-weight: 600;
+  margin: 0 0 20px;
+}
+.what-lead-para {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #cfd6e4;
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+.what-tab-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+.what-tab-btn {
+  background: rgba(14, 42, 94, 0.4);
+  border: 1px solid rgba(118, 169, 255, 0.25);
+  color: #a6c8ff;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.what-tab-btn:hover {
+  background: rgba(28, 95, 209, 0.5);
+  border-color: #76a9ff;
+  color: #ffffff;
+}
+.what-tab-btn.active {
+  background: linear-gradient(135deg, #0f3b8e, #1c5fd1);
+  border-color: #76a9ff;
+  color: #ffffff;
+  box-shadow: 0 0 14px rgba(61, 126, 255, 0.4);
+}
+.hat-h2 {
+  font-style: italic;
+}
+.do-h2 {
+  color: var(--accentColor);
+}
+.what-box-in {
+  flex-direction: column;
+  height: 600px;
+  margin-left: 100px;
+  position: relative;
+  display: flex;
+}
+
+.what-content {
+  width: 450px;
+  height: 33%;
+  min-height: 50%;
+  transition: 0.5s;
+  /* border: 0.5px dashed rgba(255, 255, 255, 0.3); */
+  position: relative;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.what-noTouch:hover,
+.what-content-active {
+  min-height: 67%;
+  padding: 40px 50px;
+}
+
+.what-noTouch:hover ~ .what-content,
+.what-box-in:hover .what-noTouch:not(:hover),
+.what-content.what-sibling {
+  min-height: 33%;
+  padding: 10px 50px;
+}
+.what-content h3 {
+  font-size: 35px;
+  letter-spacing: 1px;
+  margin: 0;
+}
+.what-content p {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 200;
+  letter-spacing: 0.7px;
+}
+.what-content h4 {
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: 0px;
+  font-size: 14px;
+  opacity: 0.3;
+}
+.what-content-in {
+  opacity: 0;
+  animation: whatFlicker 0.5s 1 forwards;
+  animation-delay: 1s;
+}
+@keyframes whatFlicker {
+  0%,
+  25%,
+  35%,
+  60% {
+    opacity: 0;
+  }
+
+  30%,
+  50%,
+  40%,
+  100% {
+    opacity: 1;
+  }
+}
+.what-content::before,
+.what-corner::before,
+.what-content::after,
+.what-corner::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border: 4px solid #fff;
+  opacity: 0;
+  animation: whatCorners 0.2s 1 forwards;
+  animation-delay: 0.5s;
+}
+@keyframes whatCorners {
+  100% {
+    opacity: 1;
+  }
+}
+.what-content::before {
+  top: -2px;
+  left: -2px;
+  border-right: none;
+  border-bottom: none;
+}
+.what-corner::before {
+  top: -2px;
+  right: -2px;
+  border-left: none;
+  border-bottom: none;
+}
+.what-content::after {
+  bottom: -2px;
+  left: -2px;
+  border-top: none;
+  border-right: none;
+}
+.what-corner::after {
+  bottom: -2px;
+  right: -2px;
+  border-left: none;
+  border-top: none;
+}
+.what-arrow {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: 25px;
+  height: 25px;
+  border: 1px solid #fff;
+}
+.what-arrow::before {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  transition: 0.5s;
+  width: 10px;
+  height: 10px;
+}
+.what-noTouch:hover .what-arrow::before,
+.what-content-active .what-arrow::before {
+  transform: translate(-50%, -20%) rotate(-225deg);
+}
+.what-border1 {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100%;
+  transition: 0.5s;
+  max-width: 0%;
+  overflow: hidden;
+  opacity: 0.8;
+  animation: whatBorders 1.2s 1 forwards;
+}
+.what-border1 svg {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 450px;
+}
+.what-border2 {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 100%;
+  max-height: 0%;
+  overflow: hidden;
+  transition: 0.5s;
+  opacity: 0.8;
+  animation: whatBorders 1.2s 1 forwards;
+}
+.what-border2 svg {
+  height: 500px;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+}
+.what-content-in {
+  height: 100%;
+  overflow: hidden;
+}
+.what-content-in h5 {
+  font-weight: 300;
+  opacity: 0.5;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-family: "Geist", sans-serif;
+  margin-bottom: 5px;
+}
+@keyframes whatBorders {
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    max-height: 100%;
+    max-width: 100%;
+    opacity: 0.2;
+  }
+}
+.what-content-flex {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.what-tags {
+  font-size: 13px;
+  font-weight: 400;
+  padding: 2px 7px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid #ffffff50;
+  border-radius: 30px;
+}
+.what-content-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.what-icon-badge {
+  font-size: 18px;
+  color: var(--accentColor);
+  opacity: 0.8;
+}
+.what-card-headline {
+  font-size: 13px !important;
+  font-style: italic;
+  color: #8bb8ff !important;
+  margin: 6px 0 !important;
+  font-weight: 400 !important;
+}
+.what-card-desc {
+  font-size: 12px !important;
+  line-height: 1.5 !important;
+  color: #b0bcd4 !important;
+  margin-bottom: 8px !important;
+}
+.what-detail-panel {
+  width: 520px;
+  max-width: 100%;
+  margin-left: 60px;
+  background: rgba(14, 42, 94, 0.25);
+  border: 1px solid rgba(118, 169, 255, 0.2);
+  border-radius: 12px;
+  padding: 32px;
+  backdrop-filter: blur(10px);
+}
+.panel-tag {
+  color: var(--accentColor);
+  font-size: 11px;
+  letter-spacing: 3px;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+.what-panel-header h3 {
+  font-size: 24px;
+  color: #ffffff;
+  margin: 0 0 10px;
+  letter-spacing: 1px;
+}
+.panel-lead {
+  font-size: 14px;
+  color: #8bb8ff;
+  font-style: italic;
+  line-height: 1.5;
+  margin: 0 0 24px;
+}
+.what-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.detail-item {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 8px;
+  padding: 14px;
+}
+.detail-item h4 {
+  margin: 0 0 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #e2edff;
+}
+.detail-item p {
+  margin: 0;
+  font-size: 11px;
+  line-height: 1.5;
+  color: #9aa7c0;
+  font-weight: 300;
+}
+.role-checklist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.role-checklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 13px;
+  color: #d1dcff;
+  line-height: 1.5;
+}
+.role-check-icon {
+  color: #76a9ff;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 1px;
+  flex-shrink: 0;
+}
+
+@media only screen and (max-width: 1600px) {
+  .what-box h2 {
+    margin-right: 18%;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .what-box h2 {
+    margin-right: 20%;
+  }
+  .what-box-in {
+    height: 400px;
+  }
+  .what-content h3 {
+    font-size: 28px;
+  }
+  .what-content {
+    padding: 30px;
+    width: 400px;
+  }
+  .what-content p {
+    font-size: 13px;
+  }
+  .what-noTouch:hover,
+  .what-content-active {
+    padding: 20px 30px;
+  }
+
+  .what-noTouch:hover ~ .what-content,
+  .what-box-in:hover .what-noTouch:not(:hover),
+  .what-content.what-sibling {
+    padding: 10px 30px;
+  }
+  .what-tags {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .what-box-in {
+    margin-left: 50px;
+  }
+  .what-content {
+    width: 380px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .whatIDO {
+    height: auto;
+    padding: 50px 0px;
+    padding-bottom: 50px;
+  }
+  .what-box-in {
+    height: 500px;
+    margin-left: -50px;
+  }
+  .what-content {
+    padding: 50px;
+    width: 500px;
+  }
+  .what-content p {
+    font-size: 14px;
+  }
+  .what-noTouch:hover,
+  .what-content-active {
+    min-height: 67%;
+    padding: 50px;
+  }
+
+  .what-noTouch:hover ~ .what-content,
+  .what-box-in:hover .what-noTouch:not(:hover),
+  .what-content.what-sibling {
+    min-height: 33%;
+    padding: 10px 50px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .whatIDO {
+    flex-direction: column;
+  }
+  .what-box h2 {
+    margin: 50px 0;
+    font-size: 55px;
+    line-height: 53px;
+  }
+  .what-box:first-child {
+    justify-content: left;
+  }
+  .what-box:last-child {
+    height: 500px;
+  }
+  .what-box {
+    width: 500px;
+    max-width: calc(100% - 50px);
+    margin: auto;
+  }
+  .what-content {
+    width: 100%;
+  }
+  .what-box-in {
+    margin-left: 0px;
+    height: 450px;
+  }
+  .what-content h5,
+  .what-content-flex {
+    opacity: 0;
+    transition: 0.3s;
+  }
+  .what-noTouch:hover h5,
+  .what-content-active h5,
+  .what-noTouch:hover .what-content-flex,
+  .what-content-active .what-content-flex {
+    opacity: 1;
+  }
+  .what-content {
+    padding: 30px;
+  }
+  .what-content p {
+    font-size: 11px;
+  }
+  .what-noTouch:hover,
+  .what-content-active {
+    padding: 10px 30px;
+  }
+  .what-tags {
+    font-size: 11px;
+  }
+
+  .what-noTouch:hover ~ .what-content,
+  .what-box-in:hover .what-noTouch:not(:hover),
+  .what-content.what-sibling {
+    padding: 5px 30px;
+  }
+  .what-content h3 {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .whatIDO {
+    place-items: inherit;
+    align-items: start;
+    justify-content: left;
+  }
+  .what-box {
+    max-width: calc(100% - 25px);
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 1950px) {
+  .what-box h2 {
+    font-size: 7rem;
+    line-height: 6.8rem;
+  }
+}

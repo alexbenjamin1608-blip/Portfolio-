@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#081b3d" />
+      <stop offset="50%" stop-color="#0e2a5e" />
+      <stop offset="100%" stop-color="#050e21" />
+    </linearGradient>
+  </defs>
+  <rect width="480" height="320" rx="16" fill="url(#bg2)" stroke="#1e3a6c" stroke-width="2" />
+  <circle cx="240" cy="120" r="50" fill="#0d244d" stroke="#3d6ebb" stroke-width="2" />
+  <!-- Airplane icon -->
+  <path d="M 240 85 L 245 110 L 275 125 L 275 132 L 245 124 L 245 145 L 255 153 L 255 158 L 240 155 L 225 158 L 225 153 L 235 145 L 235 124 L 205 132 L 205 125 L 235 110 Z" fill="#f5c442" />
+  <text x="240" y="215" fill="#ffffff" font-family="'Geist', sans-serif" font-size="20" font-weight="600" text-anchor="middle">WHY CABIN CREW?</text>
+  <text x="240" y="245" fill="#8cb5ff" font-family="'Geist', sans-serif" font-size="13" font-weight="400" text-anchor="middle">Passion for Flight Hospitality • Safety Stewardship</text>
+  <rect x="180" y="265" width="120" height="24" rx="12" fill="#0f3470" stroke="#f5c442" stroke-width="1" />
+  <text x="240" y="281" fill="#ffd978" font-family="'Geist', sans-serif" font-size="11" font-weight="600" text-anchor="middle">SCENARIO 02</text>
+</svg>

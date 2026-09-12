@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#081b3d" />
+      <stop offset="50%" stop-color="#0e2a5e" />
+      <stop offset="100%" stop-color="#050e21" />
+    </linearGradient>
+  </defs>
+  <rect width="480" height="320" rx="16" fill="url(#bg5)" stroke="#1e3a6c" stroke-width="2" />
+  <circle cx="240" cy="120" r="50" fill="#0d244d" stroke="#3d6ebb" stroke-width="2" />
+  <!-- Teamwork Icon (Multiple crew members) -->
+  <circle cx="240" cy="105" r="14" fill="#f5c442" />
+  <circle cx="215" cy="115" r="11" fill="#8cb5ff" />
+  <circle cx="265" cy="115" r="11" fill="#8cb5ff" />
+  <path d="M 220 145 C 220 128, 260 128, 260 145 Z" fill="#f5c442" />
+  <path d="M 200 150 C 200 135, 230 135, 230 150 Z" fill="#8cb5ff" opacity="0.8" />
+  <path d="M 250 150 C 250 135, 280 135, 280 150 Z" fill="#8cb5ff" opacity="0.8" />
+  <text x="240" y="215" fill="#ffffff" font-family="'Geist', sans-serif" font-size="20" font-weight="600" text-anchor="middle">CREW TEAMWORK</text>
+  <text x="240" y="245" fill="#8cb5ff" font-family="'Geist', sans-serif" font-size="13" font-weight="400" text-anchor="middle">Coordination • Mutual Support • Turnaround Agility</text>
+  <rect x="180" y="265" width="120" height="24" rx="12" fill="#0f3470" stroke="#f5c442" stroke-width="1" />
+  <text x="240" y="281" fill="#ffd978" font-family="'Geist', sans-serif" font-size="11" font-weight="600" text-anchor="middle">SCENARIO 05</text>
+</svg>

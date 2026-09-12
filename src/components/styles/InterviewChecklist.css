@@ -1,0 +1,378 @@
+.interview-checklist {
+  padding: 120px 0 100px;
+  margin: auto;
+  max-width: var(--cMaxWidth);
+}
+.checklist-heading {
+  max-width: 820px;
+}
+.checklist-subhead {
+  color: var(--accentColor);
+  letter-spacing: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+.checklist-heading h2 {
+  font-size: clamp(38px, 5vw, 68px);
+  font-weight: 500;
+  line-height: 1.05;
+  margin: 10px 0 16px;
+  color: #ffffff;
+}
+.checklist-heading p {
+  color: #c0ccdf;
+  font-weight: 300;
+  line-height: 1.6;
+  font-size: 15px;
+}
+.recruitment-banner {
+  margin-top: 30px;
+  padding: 16px 24px;
+  border-left: 4px solid var(--accentColor);
+  background: rgba(14, 42, 94, 0.35);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.banner-badge {
+  background: #0f3b8e;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  padding: 5px 12px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+.recruitment-banner p {
+  margin: 0;
+  color: #d1dcff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.checklist-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-top: 45px;
+}
+.check-card {
+  border: 1px solid rgba(118, 169, 255, 0.2);
+  background: linear-gradient(
+    135deg,
+    rgba(20, 59, 120, 0.22),
+    rgba(255, 255, 255, 0.02)
+  );
+  padding: 32px;
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+}
+.card-title-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+.card-icon {
+  font-size: 24px;
+  color: #76a9ff;
+}
+.check-card h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+  color: #ffffff;
+}
+.card-note {
+  font-size: 13px;
+  color: #8bb8ff;
+  font-style: italic;
+  margin: 0 0 18px;
+}
+.check-card ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: grid;
+  gap: 12px;
+}
+.check-card li {
+  display: flex;
+  gap: 12px;
+  color: #c9cad0;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+.check-sym {
+  color: #76a9ff;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.verify-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.verify-item {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(118, 169, 255, 0.12);
+  border-radius: 8px;
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.verify-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.verify-criteria {
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 14px;
+}
+.verify-badge {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #ffd978;
+  background: rgba(245, 196, 66, 0.15);
+  border: 1px solid rgba(245, 196, 66, 0.4);
+  padding: 3px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+.verify-inst {
+  font-size: 12px;
+  color: #a6b2c8;
+  line-height: 1.4;
+  font-weight: 300;
+}
+
+/* Document Checklist Block */
+.document-checklist-block {
+  margin-top: 40px;
+  background: linear-gradient(
+    135deg,
+    rgba(14, 42, 94, 0.35),
+    rgba(255, 255, 255, 0.02)
+  );
+  border: 1px solid rgba(118, 169, 255, 0.25);
+  border-radius: 12px;
+  padding: 32px;
+  backdrop-filter: blur(10px);
+}
+.doc-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.doc-header h3 {
+  margin: 0 0 6px;
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.doc-subtitle {
+  margin: 0;
+  font-size: 14px;
+  color: #8bb8ff;
+  font-style: italic;
+}
+.doc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 14px;
+}
+.doc-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  padding: 12px 16px;
+}
+.doc-num {
+  font-size: 12px;
+  font-weight: 700;
+  color: #76a9ff;
+  background: rgba(118, 169, 255, 0.15);
+  padding: 2px 6px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+.doc-text {
+  font-size: 13px;
+  color: #e2edff;
+  line-height: 1.4;
+  font-weight: 300;
+}
+.doc-footer-note {
+  margin: 20px 0 0;
+  font-size: 12px;
+  color: #9aa7c0;
+  font-style: italic;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 14px;
+}
+
+/* Interview Prep Accordion */
+.prep-section {
+  margin-top: 80px;
+}
+.prep-header {
+  max-width: 800px;
+  margin-bottom: 30px;
+}
+.prep-subtag {
+  color: var(--accentColor);
+  letter-spacing: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+.prep-header h3 {
+  font-size: clamp(30px, 4vw, 48px);
+  color: #ffffff;
+  margin: 0 0 12px;
+  font-weight: 500;
+}
+.prep-desc {
+  font-size: 15px;
+  color: #a6b2c8;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+.questions-accordion {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.accordion-item {
+  background: rgba(14, 42, 94, 0.22);
+  border: 1px solid rgba(118, 169, 255, 0.15);
+  border-radius: 10px;
+  padding: 18px 22px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.accordion-item:hover {
+  background: rgba(20, 59, 120, 0.4);
+  border-color: rgba(118, 169, 255, 0.4);
+}
+.accordion-item.open {
+  background: rgba(20, 59, 120, 0.45);
+  border-color: #76a9ff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+.accordion-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+.accordion-question h4 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: #e2edff;
+  line-height: 1.4;
+}
+.chevron-icon {
+  color: #76a9ff;
+  font-size: 14px;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+.chevron-icon.rotated {
+  transform: rotate(180deg);
+}
+.accordion-answer {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(118, 169, 255, 0.15);
+}
+.accordion-answer p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #d1dcff;
+  font-weight: 300;
+}
+
+/* Safety & Anti-Fraud Notice */
+.safety-warning-box {
+  margin-top: 60px;
+  padding: 24px 30px;
+  border: 1px solid rgba(224, 37, 104, 0.5);
+  background: rgba(224, 37, 104, 0.08);
+  border-radius: 10px;
+}
+.warning-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+.warning-icon {
+  font-size: 20px;
+  color: #ff6b8b;
+  flex-shrink: 0;
+}
+.safety-warning-box h4 {
+  margin: 0;
+  color: #ff6b8b;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+}
+.safety-warning-box p {
+  margin: 0;
+  color: #f1d7df;
+  font-size: 14px;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+@media (max-width: 900px) {
+  .interview-checklist {
+    padding: 80px 0;
+  }
+  .checklist-heading h2 {
+    font-size: 40px;
+  }
+  .checklist-grid {
+    grid-template-columns: 1fr;
+    margin-top: 35px;
+  }
+  .questions-accordion {
+    grid-template-columns: 1fr;
+  }
+  .check-card {
+    min-height: 0;
+    padding: 24px;
+  }
+  .recruitment-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
